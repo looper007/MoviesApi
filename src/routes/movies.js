@@ -10,7 +10,7 @@ router.get("/", (req, res) => {
   const limit = parseInt(pageSize);
   const offset = (parseInt(page) - 1) * limit;
   let query = "SELECT * FROM movies";
-
+  //test
   if (searchText) {
     query += ` WHERE title LIKE '%${searchText}%' OR director LIKE '%${searchText}%'`;
   }
