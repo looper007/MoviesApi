@@ -3,7 +3,7 @@ const cors = require("cors");
 const moviesRouter = require("./routes/movies");
 
 const app = express();
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 80;
 
 app.use(cors());
 app.use(express.json());
